@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>時刻確認</title>
+    <script>
+        function displayMessage() {
+            var message = "今日って9時から？";
+            document.getElementById("timeMessage").textContent = message;
+        }
+    </script>
+</head>
+<body onload="displayMessage()">
+    <h1 id="timeMessage"></h1>
+</body>
+</html>
