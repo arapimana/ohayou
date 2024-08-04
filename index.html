@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>おはよう</title>
+    <title>おはよう！！</title>
     <style>
       body {
         background-color: #ff69b4;
@@ -13,36 +13,38 @@
         justify-content: center;
         align-items: center;
         height: 100vh;
-        position: relative;
+        overflow: auto;
+        flex-direction: column;
       }
       h1 {
         color: #fff;
         font-size: 4em;
         text-shadow: 2px 2px #000;
-        position: absolute;
-        top: 20px;
-        left: 50%;
-        transform: translateX(-50%);
+        margin: 0;
       }
-      .stacked-text {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+      p {
+        color: #000;
         font-size: 2em;
         text-shadow: 2px 2px #fff;
-        color: #000;
+        margin: 5px 0;
       }
     </style>
   </head>
   <body>
-    <h1>おはよう</h1>
-    <!-- 同じテキストを重ねて表示 -->
-    <div class="stacked-text">今日で9時から？</div>
-    <div class="stacked-text" style="z-index: 1;">今日で9時から？</div>
-    <div class="stacked-text" style="z-index: 2;">今日で9時から？</div>
-    <div class="stacked-text" style="z-index: 3;">今日で9時から？</div>
-    <div class="stacked-text" style="z-index: 4;">今日で9時から？</div>
-    <!-- 必要に応じてさらに追加 -->
+    <h1>おはよう！！</h1>
+    <div>
+      <!-- 同じテキストを複数回表示 -->
+      <p>今日って9時から？</p>
+      <p>今日って9時から？</p>
+      <p>今日って9時から？</p>
+      <p>今日って9時から？</p>
+      <p>今日って9時から？</p>
+      <p>今日って9時から？</p>
+      <p>今日って9時から？</p>
+      <p>今日って9時から？</p>
+      <p>今日って9時から？</p>
+      <p>今日って9時から？</p>
+      <!-- 必要に応じてさらに追加 -->
+    </div>
   </body>
 </html>
